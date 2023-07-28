@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LINK BOOSTRAP 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- LINK FUENTE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- LINK ICONOS-->
+        <script src="https://kit.fontawesome.com/15e6c0ec3f.js" crossorigin="anonymous"></script>
+        <!-- TITULO -->
+        <title>Inscripción</title>
+        <!-- LINK FAVICON -->
+        <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    </head>
+    <body>
+
+        <header class="navbar navbar-expand-lg navbar-dark justify-content-between">
+            <nav class="container-fluid">
+                 <a href="index.html" class="navbar-brand" style="cursor: pointer">
+                    <i class="fa-solid fa-code pe-2" style="color: #1470d7"></i>
+                    <span class="text-light">Actividad<span style="color: #1470d7"> Virtual</span></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar Formulario..." aria-label="Search" style="background-color: #26242d ; border: none; color: whitesmoke">
+                            <button class="btn text-light" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row flex-nowrap text-light m-0">
+            <!-- MENU LATERAL -->
+            <div class="menu col-auto col-md-3 col-xl-2 px-0">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <!-- LINKS PÁGINAS -->
+                    <ul class="nav nav-pills flex-column mb-5 align-items-center align-items-sm-start pt-3" id="menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link align-middle text-muted px-2">
+                                <i class="fa-solid fa-house fs-5"></i> <span class="ms-1 d-none d-sm-inline text-decoration-none fs-5">INICIO</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="frmInteresados.html" class="nav-link align-middle text-light px-2">
+                                <i class="fa-solid fa-file-lines fs-5"></i> <span class="ms-1 d-none d-sm-inline text-decoration-none fs-5">FORMULARIO</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="..." class="nav-link align-middle text-muted px-2">
+                                <i class="fa-solid fa-table-list fs-5"></i> <span class="ms-1 d-none d-sm-inline text-decoration-none fs-5">LISTAR DATOS</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link align-middle text-muted px-2">
+                                <i class="fa-solid fa-user fs-5"></i> <span class="ms-1 d-none d-sm-inline text-decoration-none fs-5">CESAR DANIEL</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!---->
+                </div>
+            </div>
+            <!---->
+
+            <!-- CUERPO -->
+            <main class="col">
+                <!-- FORMULARIO -->
+                <article class="p-4">
+                    <section>
+                        <!-- TITULO -->
+                        <a href="index.html" class="text-decoration-none text-light fs-5">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span class="d-none d-sm-inline">ﾠVolver</span>
+                        </a>
+                        <h5 class="text-center fs-2 fw-bold mb-0 pb-2">¿Quieres optimizar tu <span style="color: #1470d7">captación</span>?</h5>
+                        <h6 class="text-center mb-4">Déjanos tus datos o llámanos al 91 414 91 24.</h6>
+                        <!---->
+                        <!-- FORM -->
+                        <form action="agregarInteresado.jsp" method="POST" class="pb-3">
+                            <input type="text" name="nombresApellidos" class="w-100 px-2 py-2 mb-2" placeholder="Nombres y Apellidos*"><br>
+
+                            <input type="text" name="empresa" class="w-100 px-2 py-2 mb-2" placeholder="Empresa*"><br>
+
+                            <input type="text" name="web" class="w-100 px-2 py-2 mb-2" placeholder="Web*"><br>
+
+                            <input type="text" name="cargo" class="w-100 px-2 py-2 mb-2" placeholder="Cargo*"><br>
+
+                            <input type="email" name="email" class="w-100 px-2 py-2 mb-2" placeholder="Email*"><br>
+
+                            <input type="text" name="telefono" class="w-100 px-2 py-2 mb-2" placeholder="Teléfono*"><br>
+
+                            <input type="text" name="leads" class="w-100 px-2 py-2 mb-2" placeholder="¿Cuántos leads captas al mes?*"><br>
+
+                            <textarea name="mensaje" rows="5" cols="10" class="w-100 px-2 py-2 mb-2" placeholder="Escribe tu mensaje*"></textarea>
+
+                            <input type="submit" value="ENVIAR" class="btn w-100 fs-5 px-2 py-2">
+                        </form>
+                        <!---->
+                    </section>
+                </article>
+                <!---->
+            </main>
+            <!---->
+        </div>
+    </body>
+</html>
